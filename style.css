@@ -14,11 +14,12 @@ body {
   width:120px;
   height:120px;
   border-radius: 50%;
-  position: absolute;
+  position: fixed;
   top:20px;
   right:20px;
   z-index: 1;
 }
+
 
 #menu h2{
   text-align: center;
@@ -83,6 +84,8 @@ section {
   border-top-right-radius: 50px;
   border-top-left-radius: 50px;
   margin-top: -50px;
+  overflow: hidden;
+
 }
 
 h1 {
@@ -136,31 +139,6 @@ p {
   border-top-left-radius: 0px;
 }
 
-.hero-section:after, #people2:after, #people3:after, #people4:after{
-  pointer-events: none;
-  background-image: url("images/noise.png");
-  content: "";
-  height: 300%;
-  left: -50%;
-  position: fixed;
-  top: -100%;
-  width: 300%;
-  animation: grain 8s steps(10) infinite;
-
-}
-
-@keyframes grain {
-  0%, 100% { transform:translate(0, 0) }
-  10% { transform:translate(-5%, -10%) }
-  20% { transform:translate(-15%, 5%) }
-  30% { transform:translate(7%, -25%) }
-  40% { transform:translate(-5%, 25%) }
-  50% { transform:translate(-15%, 10%) }
-  60% { transform:translate(15%, 0%) }
-  70% { transform:translate(0%, 15%) }
-  80% { transform:translate(3%, 35%) }
-  90% { transform:translate(-10%, 10%) }
-}
 
 .hero-section h1, #people2 h1, #people3 h1, #people4 h1 {
   font-size: 4.8em !important;
@@ -233,21 +211,18 @@ path {
   background:  linear-gradient( rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15) ),url("images/people3.jpg");
   color: white;
   background-size: 33%;
-  overflow: hidden;
 }
 
 #people3{
   background:  linear-gradient( rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15) ),url("images/people4.jpg");
   color: white;
   background-size: 38%;
-  overflow: hidden;
 }
 
 #people4{
   background:  linear-gradient( rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15) ),url("images/people2.jpg");
   color: white;
   background-size: 38%;
-  overflow: hidden;
 }
 /* //// About us Section//// */
 
@@ -283,16 +258,16 @@ path {
   margin-bottom: 40px;
   font-weight: bold;
   font-size: 25px;
-  color: rgba(150, 123, 96, 0.733);
+  color:whitesmoke
 }
 
 #names li:hover {
-  color: rgba(150, 123, 96, 0.507);
+  color:rgb(235, 235, 235);
   cursor: pointer;
 }
 
 #names li.active {
-  color: rgb(124, 103, 82);
+  color: rgb(224, 183, 115);
 }
 
 /* intros to the band members*/
@@ -324,6 +299,10 @@ path {
   color: white;
 }
 
+#socials *:hover{
+  filter: brightness(95%);
+}
+
 /* //// Gig section ////*/
 
 #gigs h3 {
@@ -333,6 +312,17 @@ path {
 #gigs{
   overflow: scroll;
 }
+
+#gigs a{
+  margin-left:10px;
+  text-decoration: none;
+  color:rgb(245, 212, 201);
+}
+
+#gigs a:hover{
+  color:rgb(230, 178, 161);
+}
+
 
 
 /* //// Media Queries ////*/
