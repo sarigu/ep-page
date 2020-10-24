@@ -98,14 +98,16 @@ p {
 }
 
 .hero-section:after, #people2:after, #people3:after, #people4:after{
-  /*background-image: url("images/noise.png");
+  pointer-events: none;
+  background-image: url("images/noise.png");
   content: "";
   height: 300%;
   left: -50%;
   position: fixed;
   top: -100%;
   width: 300%;
-  animation: grain 8s steps(10) infinite;*/
+  animation: grain 8s steps(10) infinite;
+  z-index: -1;
 }
 
 @keyframes grain {
