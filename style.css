@@ -1,0 +1,359 @@
+@import url("https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;700;800&display=swap");
+
+
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  font-family: "Maven Pro", sans-serif;
+}
+
+header{
+  position: absolute;
+  margin: 50px;
+  z-index: 1;
+  float: right;
+}
+
+nav{
+  background-color: white;
+  max-width:100px;
+  height:100px;
+  border-radius: 50%;
+}
+
+nav a{
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* for scroll effect*/
+header,
+section {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+}
+
+section {
+  height: 100vh;
+  border-top-right-radius: 50px;
+  border-top-left-radius: 50px;
+  margin-top: -50px;
+}
+
+h1 {
+  margin-bottom: 50px;
+  font-size: 35px;
+  
+}
+
+h1,
+h2,
+h3 {
+  text-align: center;
+}
+
+p {
+  line-height: 28px;
+}
+
+.spacing {
+  padding: 4vw 25vw 4vw 25vw;
+}
+
+.bg-linen {
+  background-color: #FEDCA6;
+  color: white;
+}
+
+.bg-grey {
+  background-color: #E35225;
+  color: white;
+}
+
+.bg-pink {
+  background-color: #F8C4C5;
+  color: white;
+}
+
+.bg-green {
+  background-color: #4492C2;
+  color: white;
+}
+
+/* //// First Section //// */
+
+.hero-section {
+  background:  linear-gradient( rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15) ),url("images/people1.jpg");
+  background-size: 38%;
+  color: white;
+  height: 90vh;
+  border-top-right-radius: 0px;
+  border-top-left-radius: 0px;
+}
+
+.hero-section:after, #people2:after, #people3:after, #people4:after{
+  /*background-image: url("images/noise.png");
+  content: "";
+  height: 300%;
+  left: -50%;
+  position: fixed;
+  top: -100%;
+  width: 300%;
+  animation: grain 8s steps(10) infinite;*/
+}
+
+@keyframes grain {
+  0%, 100% { transform:translate(0, 0) }
+  10% { transform:translate(-5%, -10%) }
+  20% { transform:translate(-15%, 5%) }
+  30% { transform:translate(7%, -25%) }
+  40% { transform:translate(-5%, 25%) }
+  50% { transform:translate(-15%, 10%) }
+  60% { transform:translate(15%, 0%) }
+  70% { transform:translate(0%, 15%) }
+  80% { transform:translate(3%, 35%) }
+  90% { transform:translate(-10%, 10%) }
+}
+
+.hero-section h1, #people2 h1, #people3 h1, #people4 h1 {
+  font-size: 4.8em !important;
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+}
+
+/* //// Song Section //// */
+
+.song-container {
+  margin: 50px auto;
+  list-style: none;
+  overflow: auto;
+  white-space: nowrap;
+  width: 70%;
+}
+
+.song-container li {
+  border-radius: 5px;
+  padding: 5px;
+  text-align: center;
+  width: 120px;
+  height: 120px;
+  margin-right: 12px;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.song-container li:hover {
+  filter: brightness(110%);
+  cursor: pointer;
+}
+
+/*cover styling*/
+
+.song-container li {
+  background: rgb(234, 255, 255);
+}
+
+.song-container li:nth-child(even):after {
+  content: "\01F4BF";
+  font-size: 100px;
+}
+
+.song-container li:nth-child(odd):after {
+  content: "\01F4C0";
+  font-size: 100px;
+}
+
+/*soundwave*/
+
+svg {
+  width: 100%;
+  height: 400px;
+  margin: -180px 0;
+}
+
+path {
+  stroke: white;
+  stroke-width: 10px;
+  stroke-linecap: round;
+  fill: none;
+}
+
+
+#people2{
+  background:  linear-gradient( rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15) ),url("images/people3.jpg");
+  color: white;
+  background-size: 33%;
+  overflow: hidden;
+}
+
+#people3{
+  background:  linear-gradient( rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15) ),url("images/people4.jpg");
+  color: white;
+  background-size: 38%;
+  overflow: hidden;
+}
+
+#people4{
+  background:  linear-gradient( rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15) ),url("images/people2.jpg");
+  color: white;
+  background-size: 38%;
+  overflow: hidden;
+}
+/* //// About us Section//// */
+
+.intro-container {
+  display: flex;
+  margin: 60px auto;
+  width: 60%;
+
+}
+
+#names {
+  width: 30%;
+  margin-right: 40px;
+}
+
+#intro-txt {
+  width: 70%;
+}
+
+/* clickable band member names*/
+
+#names ul {
+  list-style-type: none;
+  margin: 0;
+}
+
+#names li {
+  margin-bottom: 40px;
+  font-weight: bold;
+  font-size: 25px;
+  color: rgba(150, 123, 96, 0.733);
+}
+
+#names li:hover {
+  color: rgba(150, 123, 96, 0.507);
+  cursor: pointer;
+}
+
+#names li.active {
+  color: rgb(124, 103, 82);
+}
+
+/* intros to the band members*/
+
+#intro-txt div {
+  display: none;
+}
+
+#intro-txt div.show {
+  display: block;
+}
+
+/* alternative text for tiny mobiles*/
+
+#alt-band-txt {
+  display: none;
+}
+
+/* //// Contact section ////*/
+
+#contact-container {
+  text-align: center;
+  margin: auto;
+}
+
+#socials * {
+  font-size: 25px;
+  padding: 10px;
+  color: white;
+}
+
+/* //// Gig section ////*/
+
+#gigs h3 {
+  margin: 40px 0 40px 0;
+}
+
+#gigs{
+  overflow: scroll;
+}
+
+
+/* //// Media Queries ////*/
+
+@media (max-width: 391px) {
+  #intro-band-txt {
+    display: none;
+  }
+
+  #alt-band-txt {
+    display: block;
+  }
+
+  #socials * {
+    padding: 5px;
+  }
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  h1 {
+    margin-bottom: 30px;
+  }
+
+  .spacing {
+    padding: 4vw 8vw 4vw 8vw;
+  }
+
+  /* display intro differently */
+
+  .intro-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  #intro-txt div span {
+    font-size: 15px;
+  }
+
+  #names {
+    width: 100%;
+  }
+
+  #names ul {
+    padding: 0;
+    margin: -15px 0 20px 0;
+  }
+
+  #names li {
+    font-size: 20px;
+    display: inline;
+    padding-right: 30px;
+  }
+
+  #intro-txt {
+    width: 100%;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .intro-container {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1500px) {
+  .spacing {
+    padding: 4vw 15vw 4vw 15vw;
+  }
+}

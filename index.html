@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <title>EP Release</title>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <a href="hero-section">Home</a>
+      <a href="hero-section">Home</a>
+      <a href="hero-section">Home</a>
+      <a href="hero-section">Home</a>
+    </nav>
+  </header>
+  <section class="hero-section spacing">
+
+    <div>
+      <h1>
+        Our new EP "People" is out soon
+      </h1>
+    </div>
+  </section>
+  <section class="bg-pink ">
+    <div class="spacing">
+      <h1>
+        Listen to our song previews
+      </h1>
+      <ul class="song-container" onclick="playSong(event)">
+        <li data-number="1"></li>
+        <li data-number="2"></li>
+        <li data-number="3"></li>
+        <li data-number="1"></li>
+
+      </ul>
+    </div>
+
+    <svg>
+      <path id="path1" d="M10,10 L50,100 L90,50"></path>
+    </svg>
+  </section>
+  <section id="people2">
+    <h1>What inspired us</h1>
+  </section>
+  <section class="bg-linen  spacing">
+    <h1>Behind the songs</h1>
+    <p id="intro-band-txt">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem praesentium ipsa, omnis doloribus beatae
+      dolorum quam cum sapiente sint quidem eos inventore eveniet reprehenderit, enim at. Impedit, est ab. Et!
+    </p>
+
+    <p id="alt-band-txt">
+      Hello, we are "Mr. Ink" (one day we talked about ink fish). We are a
+      young band based in Hamburg, Germany. Get to know us a bit more below.
+    </p>
+
+    <div class="intro-container">
+      <div id="names">
+        <ul>
+          <li class="active" id="name1" onclick="showIntro(event)">
+            Song 1
+          </li>
+          <li id="name2" onclick="showIntro(event)">Song 2</li>
+          <li id="name3" onclick="showIntro(event)">Song 3</li>
+          <li id="name4" onclick="showIntro(event)">Song 4</li>
+        </ul>
+      </div>
+
+      <div id="intro-txt">
+        <div id="name1-intro" class="show">
+          <p>
+            Toni is the singer and songwriter of our band. She likes to listen
+            to bands such as The Cure, Beginners and Paolo Nutini. Her song
+            writing process is influenced by the emotions surrounding her.
+            Toni started making music at a young age due to her unique
+            upbringing.
+          </p>
+        </div>
+        <div id="name2-intro">
+          <p>
+            Josef is the guitarist, songwriter and cook of our band. He taught
+            himself how to play guitar in school. Ever since not a day goes by
+            where he is not playing. If he doesn't work on melodies, you can
+            find him in the kitchen as a trainee.
+          </p>
+        </div>
+        <div id="name3-intro">
+          <p>
+            Sven is the saxophonist and bass player in the band. His music
+            style is influenced by Jazz and Indie bands. If he is not jamming
+            with the band, you can find him in front of a computer. Sven is
+            currently enrolled in Computer Science and is interested in how
+            coding and music can be blend together.
+          </p>
+        </div>
+        <div id="name4-intro">
+          <p>
+            Jojo plays the piano and drums. He is the youngest member of the
+            band. He helps to make sure that the different sounds are well
+            mixed in a song. You can find him in the kitchen as well, since he
+            also training to become a cook.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="people3">
+    <h1>Who we are</h1>
+  </section>
+  <section class="bg-green  spacing">
+    <h1>Our story</h1>
+    <div id="contact-container">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis eligendi, porro nulla expedita quia magnam
+        illo doloremque voluptatem libero officiis dolorum unde eveniet et corrupti fugit quam impedit a reprehenderit!
+      </p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis eligendi, porro nulla expedita quia magnam
+        illo doloremque voluptatem libero officiis dolorum unde eveniet et corrupti fugit quam impedit a reprehenderit!
+      </p>
+      <br>
+
+      <p>Keep in touch</p>
+      <div id="socials">
+        <a href="#"><i class="fa fa-instagram"></i></a>
+        <a href="#"><i class="fa fa-facebook"></i></a>
+        <a href="#"><i class="fa fa-pinterest"></i></a>
+        <a href="#"><i class="fa fa-tumblr"></i></a>
+      </div>
+    </div>
+  </section>
+  <section id="people4">
+    <h1>Upcoming tour dates</h1>
+  </section>
+  <section class="spacing bg-grey ">
+    <h1>We hope to see you at our gigs!</h1>
+    <div id="gigs">
+      <h2>Upcoming events</h2>
+      <h3>01.05.2020 Grünspan, Hamburg <a href="#">Get tickets</a></h3>
+      <h3>14.12.2020 Knust, Hamburg <a href="#">Get tickets</a></h3>
+      <h3>01.05.2020 Grünspan, Hamburg <a href="#">Get tickets</a></h3>
+      <h3>14.12.2020 Knust, Hamburg <a href="#">Get tickets</a></h3>
+      <h3>01.05.2020 Grünspan, Hamburg <a href="#">Get tickets</a></h3>
+      <h3>14.12.2020 Knust, Hamburg <a href="#">Get tickets</a></h3>
+    </div>
+  </section>
+
+  <!--audio-->
+  <audio id="happyblues">
+    <source src="music/01 Happy Blues.MP3" type="audio/mpeg" />
+  </audio>
+  <audio id="getdown">
+    <source src="music/02 Come Get Down With Me.MP3" type="audio/mpeg" />
+  </audio>
+  <audio id="somethingsilhouette">
+    <source src="music/03 Somethings Silhouette.MP3" type="audio/mpeg" />
+  </audio>
+
+  <script src="app.js"></script>
+</body>
+
+</html>
