@@ -7,6 +7,17 @@ let happyblues = document.querySelector("#happyblues");
 let getdown = document.querySelector("#getdown");
 let somethingsilhouette = document.querySelector("#somethingsilhouette");
 
+function openNav() {
+  document.querySelector("#full-menu").style.height = "100%";
+  document.querySelector("#menu").style.display = "none";
+}
+
+function closeNav() {
+  document.querySelector("#full-menu").style.height = "0%";
+  document.querySelector("#menu").style.display = "block";
+}
+
+
 var songs = [happyblues, getdown, somethingsilhouette];
 
 function playSong(e) {
