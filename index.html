@@ -27,13 +27,13 @@
   <section class="hero-section spacing">
     <div>
       <h1>
-        Our new EP "People" is out soon
+        Our new EP "People" Is Out Soon
       </h1>
     </div>
   </section>
   <section class="bg-pink ">
     <div class="spacing">
-      <div id="preview-container">
+      <div id="songs-heading-container">
         <h1>
           Listen to our song previews
         </h1>
@@ -42,7 +42,6 @@
           <li data-number="2"></li>
           <li data-number="3"></li>
           <li data-number="1"></li>
-
         </ul>
       </div>
     </div>
@@ -50,34 +49,31 @@
       <path id="path1" d="M10,10 L50,100 L90,50"></path>
     </svg>
   </section>
-  <section id="people2">
-    <h1>What inspired us</h1>
+  <section id="inspiration-section">
+    <h1>What Inspired Us</h1>
   </section>
-  <section class="bg-linen  spacing">
+  <section class="bg-yellow  spacing">
     <h1>Behind the songs</h1>
-    <p id="intro-band-txt">
+    <p id="intro-txt-inspiration">
       Every song on our new EP “People” was inspired by people we have met throughout the last year. Find out more about
       the people and stories behind each song down below.
     </p>
-
-    <p id="alt-band-txt">
+    <p id="alt-txt-inspiration">
       Every song on our new EP “People” was inspired by people we have met throughout the last year
     </p>
-
-    <div class="intro-container">
-      <div id="names">
+    <div class="song-name-container">
+      <div id="song-name-list">
         <ul>
-          <li class="active" id="name1" onclick="showIntro(event)">
+          <li class="active" id="song-name-1" onclick="showIntro(event)">
             Song 1
           </li>
-          <li id="name2" onclick="showIntro(event)">Song 2</li>
-          <li id="name3" onclick="showIntro(event)">Song 3</li>
-          <li id="name4" onclick="showIntro(event)">Song 4</li>
+          <li id="song-name-2" onclick="showIntro(event)">Song 2</li>
+          <li id="song-name-3" onclick="showIntro(event)">Song 3</li>
+          <li id="song-name-4" onclick="showIntro(event)">Song 4</li>
         </ul>
       </div>
-
-      <div id="intro-txt">
-        <div id="name1-intro" class="show">
+      <div id="song-intro-container">
+        <div id="song-intro-1" class="show">
           <p>
             The first song was inspired by a good friend of ours. She has been fighting her way trough a dark time of
             her life. Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati voluptas vel dicta. Harum
@@ -85,14 +81,14 @@
             consequuntur?
           </p>
         </div>
-        <div id="name2-intro">
+        <div id="song-intro-2">
           <p>
             The second song was inspired by an old guy our singer Toni met one morning while waiting for the train.
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, incidunt natus. Ipsum et qui aperiam, fuga
             laboriosam ducimus modi nihil earum nobis quidem sed perspiciatis, voluptatum hic voluptatem? Quisquam, ut.
           </p>
         </div>
-        <div id="name3-intro">
+        <div id="song-intro-3">
           <p>
             The third song was inspired by different people we saw hanging out in the park nearby our neighborhood in
             the summer. Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae ducimus iste pariatur ea,
@@ -100,7 +96,7 @@
             nisi rem porro nihil.
           </p>
         </div>
-        <div id="name4-intro">
+        <div id="song-intro-4">
           <p>
             The last song is dedicated to everyone who missed the chance to talk to a stranger or a person close to
             them. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores corrupti velit sunt reprehenderit
@@ -111,10 +107,10 @@
       </div>
     </div>
   </section>
-  <section id="people3">
-    <h1>Who we are</h1>
+  <section id="about-section">
+    <h1>Who We Are</h1>
   </section>
-  <section class="bg-green  spacing">
+  <section class="bg-blue spacing">
     <h1>Our story</h1>
     <div id="contact-container">
       <p>
@@ -132,12 +128,12 @@
       </div>
     </div>
   </section>
-  <section id="people4">
-    <h1>Upcoming tour dates</h1>
+  <section id="tour-dates-section">
+    <h1>Upcoming Gigs</h1>
   </section>
-  <section class="spacing bg-grey ">
+  <section class="bg-orange spacing">
     <h1>We hope to see you at our gigs!</h1>
-    <div id="gigs">
+    <div id="gigs-container">
       <h2>Upcoming events</h2>
       <h3>01.05.2020 Grünspan, Hamburg <a href="#">Get tickets</a></h3>
       <h3>14.06.2020 Knust, Hamburg <a href="#">Get tickets</a></h3>
@@ -147,19 +143,19 @@
       <h3>14.10.2020 Knust, Hamburg <a href="#">Get tickets</a></h3>
     </div>
   </section>
-
   <!--audio-->
-  <audio id="happyblues">
+  <audio id="happyblues-song">
     <source src="music/01 Happy Blues.MP3" type="audio/mpeg" />
   </audio>
-  <audio id="getdown">
+  <audio id="getdown-song">
     <source src="music/02 Come Get Down With Me.MP3" type="audio/mpeg" />
   </audio>
-  <audio id="somethingsilhouette">
+  <audio id="somethingsilhouette-song">
     <source src="music/03 Somethings Silhouette.MP3" type="audio/mpeg" />
   </audio>
 
   <script src="app.js"></script>
+
 </body>
 
 </html>

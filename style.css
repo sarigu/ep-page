@@ -1,5 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;700;800&display=swap");
+/* ////   General  //////*/
 
+@import url("https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;700;800&display=swap");
 
 body {
   width: 100%;
@@ -8,6 +9,36 @@ body {
   font-family: "Maven Pro", sans-serif;
 }
 
+h1 {
+  margin-bottom: 50px;
+  font-size: 35px;
+}
+
+h1,
+h2,
+h3 {
+  text-align: center;
+}
+
+p {
+  line-height: 28px;
+}
+
+/* for scroll effect*/
+section {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  height: 100vh;
+  border-top-right-radius: 50px;
+  border-top-left-radius: 50px;
+  margin-top: -50px;
+  color: white;
+}
+
+
+
+/* ////   Preorder  //////*/
 
 #preorder{
   background-color: white;
@@ -39,7 +70,7 @@ body {
   left: 0;
   background-color: whitesmoke;
   overflow: hidden;
-  transition: 0.7s;
+  transition: 0.8s;
 }
 
 .overlay-content {
@@ -70,85 +101,65 @@ body {
 
 
 
-
-/* for scroll effect*/
-header,
-section {
-  position: sticky;
-  position: -webkit-sticky;
-  top: 0;
-}
-
-section {
-  height: 100vh;
-  border-top-right-radius: 50px;
-  border-top-left-radius: 50px;
-  margin-top: -50px;
-}
-
-h1 {
-  margin-bottom: 50px;
-  font-size: 35px;
-}
-
-h1,
-h2,
-h3 {
-  text-align: center;
-}
-
-p {
-  line-height: 28px;
-}
+/* ////   Sections Styling  //////*/
 
 .spacing {
   padding: 4vw 25vw 4vw 25vw;
 }
 
-.bg-linen {
-  background-color: #FEDCA6;
-  color: white;
-}
-
-.bg-grey {
-  background-color: #E35225;
-  color: white;
-}
-
 .bg-pink {
   background-color: #F8C4C5;
-  color: white;
 }
 
-.bg-green {
+.bg-yellow  {
+  background-color: #FEDCA6;
+}
+
+.bg-blue{
   background-color: #4492C2;
-  color: white;
 }
 
-/* //// First Section //// */
+.bg-orange {
+  background-color: #E35225;
+}
 
 .hero-section {
-  background:  linear-gradient( rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15) ),url("images/people1.jpg");
+  background: linear-gradient( rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15) ),url("images/people1.jpg");
   background-size: 38%;
-  color: white;
   height: 90vh;
   border-top-right-radius: 0px;
   border-top-left-radius: 0px;
 }
 
-
-.hero-section h1, #people2 h1, #people3 h1, #people4 h1 {
+.hero-section h1, #inspiration-section h1, #about-section h1, #tour-dates-section h1 {
   font-size: 4.8em !important;
   position: absolute;
   top: 35%;
   left: 50%;
   transform: translate(-50%, -50%);
-
 }
 
-/* //// Song Section //// */
+#inspiration-section, #about-section,#tour-dates-section{
+  background-size: 33%;
+}
 
-#preview-container{
+#inspiration-section{
+  background:  linear-gradient( rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15) ),url("images/people3.jpg");
+}
+
+#about-section{
+  background:  linear-gradient( rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15) ),url("images/people4.jpg");
+}
+
+#tour-dates-section{
+  background:  linear-gradient( rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15) ),url("images/people2.jpg");
+}
+
+
+
+/* ////   Song Preview Section  //////*/
+
+#songs-heading-container{
   display: flex;
   flex-direction: column;
   justify-items: center;
@@ -162,7 +173,7 @@ p {
 }
 
 .song-container li {
-  border-radius: 5px;
+  border-radius: 10px;
   padding: 5px;
   text-align: center;
   width: 120px;
@@ -209,86 +220,70 @@ path {
 }
 
 
-#people2{
-  background:  linear-gradient( rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15) ),url("images/people3.jpg");
-  color: white;
-  background-size: 33%;
+
+/* ////   About Us Section  //////*/
+
+/* alternative text for mobile*/
+
+#alt-txt-inspiration{
+  display: none;
 }
 
-#people3{
-  background:  linear-gradient( rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15) ),url("images/people4.jpg");
-  color: white;
-  background-size: 38%;
-}
+/* clickable song names*/
 
-#people4{
-  background:  linear-gradient( rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15) ),url("images/people2.jpg");
-  color: white;
-  background-size: 38%;
-}
-/* //// About us Section//// */
-
-.intro-container {
+.song-name-container {
   display: flex;
   margin: 60px auto;
   width: 60%;
-
 }
 
-#names {
+#song-name-list {
   width: 30%;
   margin-right: 40px;
 }
 
-#intro-txt {
-  width: 70%;
-}
-
-
-#intro-txt p{
-  margin-top: 0;
-}
-
-/* clickable band member names*/
-
-#names ul {
+#song-name-list ul {
   list-style-type: none;
   margin: 0;
 }
 
-#names li {
+#song-name-list li {
   margin-bottom: 40px;
   font-weight: bold;
   font-size: 25px;
   color:whitesmoke
 }
 
-#names li:hover {
+#song-name-list li:hover {
   color:rgb(235, 235, 235);
   cursor: pointer;
 }
 
-#names li.active {
+#song-name-list li.active {
   color: rgb(224, 183, 115);
 }
 
-/* intros to the band members*/
+/* intros to the songs(inspiration behind them)*/
 
-#intro-txt div {
+#song-intro-container {
+  width: 70%;
+}
+
+#song-intro-container p{
+  margin-top: 0;
+}
+
+#song-intro-container div {
   display: none;
 }
 
-#intro-txt div.show {
+#song-intro-container div.show {
   display: block;
 }
 
-/* alternative text for tiny mobiles*/
 
-#alt-band-txt {
-  display: none;
-}
 
-/* //// Contact section ////*/
+/* ////   Contact Section  //////*/
 
 #contact-container {
   text-align: center;
@@ -305,29 +300,31 @@ path {
   filter: brightness(95%);
 }
 
-/* //// Gig section ////*/
 
-#gigs h3 {
+
+/* ////   Gigs Section  //////*/
+
+#gigs-container h3 {
   margin: 40px 0 40px 0;
 }
 
-#gigs{
+#gigs-container{
   overflow: scroll;
 }
 
-#gigs a{
+#gigs-container a{
   margin-left:10px;
   text-decoration: none;
   color:rgb(245, 212, 201);
 }
 
-#gigs a:hover{
+#gigs-container a:hover{
   color:rgb(230, 178, 161);
 }
 
 
 
-/* //// Media Queries ////*/
+/* ////   Media Queries  //////*/
 
 @media (max-width: 1500px) {
   .spacing {
@@ -336,47 +333,50 @@ path {
 }
 
 @media (max-width: 991.98px) {
-  .intro-container {
-    width: 100%;
-  }
-
   .hero-section {
     background-size: 48%;
   }
 
-  #people2, #people3, #people4{
+  #inspiration-section, #about-section, #tour-dates-section{
     background-size: 43%;
   }
 
   .song-container {
     width:70%;
   }
+
+  .song-name-container {
+    width: 100%;
+  }
 }
 
 @media (max-width: 767.98px) {
-
   .hero-section {
     background-size: 68%;
   }
 
-  #people2, #people3, #people4{
+  #inspiration-section, #about-section, #tour-dates-section{
     background-size: 63%;
   }
 
-  #names ul {
-    padding:0;
-    margin: 0;
-  }
-
-  .hero-section h1, #people2 h1, #people3 h1, #people4 h1 {
+  .hero-section h1, #inspiration-section h1, #about-section h1, #tour-dates-section h1 {
     font-size: 3.25em !important;
   }
 
+  #song-name-list ul {
+    padding:0;
+    margin: 0;
+  }
 }
 
-
-/* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
+  h1 {
+    margin-bottom: 30px;
+  }
+
+  .spacing {
+    padding: 4vw 8vw 4vw 8vw;
+  }
 
   #preorder{
     width:90px;
@@ -388,78 +388,63 @@ path {
     margin-top:40%; 
   }
 
-  h1 {
-    margin-bottom: 30px;
-  }
-
-  .spacing {
-    padding: 4vw 8vw 4vw 8vw;
-  }
-
   .hero-section {
     background-size: 78%;
   }
 
-  #people2, #people3, #people4{
+  #inspiration-section, #about-section, #tour-dates-section{
     background-size: 73%;
   }
 
-  /* display intro differently */
-
-  .intro-container {
+  .song-name-container {
     display: flex;
     flex-wrap: wrap;
   }
 
-  #intro-txt div span {
-    font-size: 15px;
-  }
-
-  #names {
+  #song-name-list {
     width: 100%;
   }
 
-  #names ul {
+  #song-name-list ul {
     padding: 0;
     margin: -15px 0 20px 0;
   }
 
-  #names li {
+  #song-name-list li {
     font-size: 20px;
     display: inline;
     padding-right: 30px;
   }
 
-  #intro-txt {
+  #song-intro-container {
     width: 100%;
   }
 
-  #gigs h3 {
+  #gigs-container h3 {
     margin: 40px 30px 40px 30px;
   }
 }
 
 @media (max-width: 391px) {
-    section {
+  section {
     height: 150vh;
   }
 
-  .hero-section h1, #people2 h1, #people3 h1, #people4 h1 {
+  .hero-section h1, #inspiration-section h1, #about-section h1, #tour-dates-section h1 {
     font-size: 2.9em !important;
+  }
+
+  #song-intro-container-inspiration {
+    display: none;
+  }
+
+  #alt-txt-inspiration{
+    display: block;
   }
 
   #socials * {
     padding: 5px;
   }
-  #intro-band-txt {
-    display: none;
-  }
-
-  #alt-band-txt {
-    display: block;
-  }
-
-
 }
 
 
