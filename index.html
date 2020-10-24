@@ -14,25 +14,15 @@
   <div id="full-menu" class="overlay">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
     <div class="overlay-content">
-      <a href=".bg-pink ">
-        <h1>Song Previews</h1>
-      </a>
-      <a href=".bg-linen">
-        <h1>Song Inspirations</h1>
-      </a>
-      <a href=".bg-green">
-        <h1>About Us</h1>
-      </a>
-      <a href=".bg-grey ">
-        <h1>Gigs</h1>
-      </a>
-      <a href="#">
-        <h1>Preoder our EP</h1>
-      </a>
+      <h1>Preorder our new EP "People"</h1>
+      <h3>Get it on</h3>
+      <a href="#">iTunes</a>
+      <a href="#">Elgiganten</a>
+      <a href="#">Amazon</a>
     </div>
   </div>
-  <div id="menu" onclick="openNav()">
-    <h2>Menu</h2>
+  <div id="preorder" onclick="openNav()">
+    <h3>Preorder</h3>
   </div>
   <section class="hero-section spacing">
     <div>
@@ -43,18 +33,19 @@
   </section>
   <section class="bg-pink ">
     <div class="spacing">
-      <h1>
-        Listen to our song previews
-      </h1>
-      <ul class="song-container" onclick="playSong(event)">
-        <li data-number="1"></li>
-        <li data-number="2"></li>
-        <li data-number="3"></li>
-        <li data-number="1"></li>
+      <div id="preview-container">
+        <h1>
+          Listen to our song previews
+        </h1>
+        <ul class="song-container" onclick="playSong(event)">
+          <li data-number="1"></li>
+          <li data-number="2"></li>
+          <li data-number="3"></li>
+          <li data-number="1"></li>
 
-      </ul>
+        </ul>
+      </div>
     </div>
-
     <svg>
       <path id="path1" d="M10,10 L50,100 L90,50"></path>
     </svg>
@@ -70,8 +61,7 @@
     </p>
 
     <p id="alt-band-txt">
-      Every song on our new EP “People” was inspired by people we have met throughout the last year. Find out more about
-      the people and stories behind the songs down below.
+      Every song on our new EP “People” was inspired by people we have met throughout the last year
     </p>
 
     <div class="intro-container">

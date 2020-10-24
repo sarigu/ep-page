@@ -9,12 +9,12 @@ let somethingsilhouette = document.querySelector("#somethingsilhouette");
 
 function openNav() {
   document.querySelector("#full-menu").style.height = "100%";
-  document.querySelector("#menu").style.display = "none";
+  document.querySelector("#preorder").style.display = "none";
 }
 
 function closeNav() {
   document.querySelector("#full-menu").style.height = "0%";
-  document.querySelector("#menu").style.display = "block";
+  document.querySelector("#preorder").style.display = "block";
 }
 
 

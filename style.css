@@ -9,7 +9,7 @@ body {
 }
 
 
-#menu{
+#preorder{
   background-color: white;
   width:120px;
   height:120px;
@@ -20,13 +20,12 @@ body {
   z-index: 1;
 }
 
-
-#menu h2{
+#preorder h3{
   text-align: center;
-  margin-top:35%; 
+  margin-top:40%; 
 }
 
-#menu:hover{
+#preorder:hover{
   cursor: pointer;
   color: #7e7e7e;
 }
@@ -45,12 +44,13 @@ body {
 
 .overlay-content {
   position: relative;
-  top: 15%;
+  top: 25%;
   width: 100%;
   text-align: center;
 }
 
 .overlay a {
+  padding:10px;
   text-decoration: none;
   color:black;
   display: block;
@@ -84,14 +84,11 @@ section {
   border-top-right-radius: 50px;
   border-top-left-radius: 50px;
   margin-top: -50px;
-  overflow: hidden;
-
 }
 
 h1 {
   margin-bottom: 50px;
   font-size: 35px;
-  
 }
 
 h1,
@@ -151,12 +148,17 @@ p {
 
 /* //// Song Section //// */
 
+#preview-container{
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+}
+
 .song-container {
-  margin: 50px auto;
+  margin: 20px auto;
   list-style: none;
   overflow: auto;
   white-space: nowrap;
-  width: 70%;
 }
 
 .song-container li {
@@ -327,28 +329,79 @@ path {
 
 /* //// Media Queries ////*/
 
-@media (max-width: 391px) {
-  #intro-band-txt {
-    display: none;
-  }
-
-  #alt-band-txt {
-    display: block;
-  }
-
-  #socials * {
-    padding: 5px;
+@media (max-width: 1500px) {
+  .spacing {
+    padding: 4vw 15vw 4vw 15vw;
   }
 }
 
+@media (max-width: 991.98px) {
+  .intro-container {
+    width: 100%;
+  }
+
+  .hero-section {
+    background-size: 48%;
+  }
+
+  #people2, #people3, #people4{
+    background-size: 43%;
+  }
+
+  .song-container {
+    width:70%;
+  }
+}
+
+@media (max-width: 767.98px) {
+
+  .hero-section {
+    background-size: 68%;
+  }
+
+  #people2, #people3, #people4{
+    background-size: 63%;
+  }
+
+  #names ul {
+    padding:0;
+    margin: 0;
+  }
+
+  .hero-section h1, #people2 h1, #people3 h1, #people4 h1 {
+    font-size: 3.25em !important;
+  }
+
+}
+
+
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
+
+  #preorder{
+    width:90px;
+    height:90px;
+  }
+  
+  #preorder h3{
+    text-align: center;
+    margin-top:40%; 
+  }
+
   h1 {
     margin-bottom: 30px;
   }
 
   .spacing {
     padding: 4vw 8vw 4vw 8vw;
+  }
+
+  .hero-section {
+    background-size: 78%;
+  }
+
+  #people2, #people3, #people4{
+    background-size: 73%;
   }
 
   /* display intro differently */
@@ -380,16 +433,34 @@ path {
   #intro-txt {
     width: 100%;
   }
-}
 
-@media (max-width: 991.98px) {
-  .intro-container {
-    width: 100%;
+  #gigs h3 {
+    margin: 40px 30px 40px 30px;
   }
 }
 
-@media (max-width: 1500px) {
-  .spacing {
-    padding: 4vw 15vw 4vw 15vw;
+@media (max-width: 391px) {
+    section {
+    height: 150vh;
   }
+
+  .hero-section h1, #people2 h1, #people3 h1, #people4 h1 {
+    font-size: 2.9em !important;
+  }
+
+  #socials * {
+    padding: 5px;
+  }
+  #intro-band-txt {
+    display: none;
+  }
+
+  #alt-band-txt {
+    display: block;
+  }
+
+
 }
+
+
+
